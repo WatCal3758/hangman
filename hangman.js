@@ -49,7 +49,7 @@ function hangman(guess)
             numGuesses++;
           break;
     }
-    $('#guessCount').text(10 - (numGuesses+numCorrect));
+    $('#guessCount p').text(10 - (numGuesses+numCorrect));
     if(numGuesses > 9)
         {
             alert("You Lose!");
