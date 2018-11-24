@@ -25,14 +25,13 @@ function hangman(guess)
     switch(guess.toLowerCase())
     {
         case 't':
+          numCorrect++;
           letter1
             .text('T')
             .attr('data-active', 'true');
-            numCorrect++;
           letter4
             .text('T')
             .attr('data-active', 'true');
-            numCorrect++;
           break;
         case 'e':
           letter2
@@ -50,11 +49,12 @@ function hangman(guess)
             numGuesses++;
           break;
     }
-    if(numGuesses > 10)
+    $('#guessCount').text(10 - (numGuesses+numCorrect));
+    if(numGuesses > 9)
         {
-             alert("You Lose!");
+            alert("You Lose!");
         }
-    if(numCorrect == 4)
+    if(numCorrect == 3)
         {
             alert("You Win!");
         }
