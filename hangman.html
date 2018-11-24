@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Welcome to Hangman!</title>
+   <script src="hangman.css"></script>
+   <script src="hangman.js"></script>
+   <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+</head>
+<body>
+   <section id="word">
+       <span data-letter="1" class="letter" data-active="false"></span>
+       <span data-letter="2" class="letter" data-active="false"></span>
+       <span data-letter="3" class="letter" data-active="false"></span>
+       <span data-letter="4" class="letter" data-active="false"></span>
+   </section>
+
+   <form id="guesses">
+    <label for="guess">Guess a letter:</label>
+    <input id="guess" name="guess" type="text" required placeholder="Enter a Letter">
+    <button type="submit">Guess</button>
+   </form>
+</body>
+

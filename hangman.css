@@ -1,0 +1,19 @@
+.main {
+    padding: 2rem;
+  }
+  
+  .letter {
+    border-bottom: 1px solid black;
+    width: 1rem;
+    display: inline-block;
+  }
+  
+  #word {
+    margin-bottom: 1.5rem;
+    border: 1px solid black;
+    padding: 1.5rem;
+    display: inline-block;
+  }
+  
+  
+  
